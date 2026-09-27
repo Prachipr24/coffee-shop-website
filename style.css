@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf5;
+    color: #3b2418;
+}
+
+
+/* Navbar */
+
+header {
+    background: #3b2418;
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #f5c58b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f5c58b;
+}
+
+nav button {
+    background: #d69a5b;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small-title {
+    color: #b8753c;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #b8753c;
+}
+
+.hero-text p {
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #5b3422;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background: #b8753c;
+}
+
+.hero-image img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 15px 40px #0004;
+}
+
+
+/* Menu */
+
+#menu {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 14px;
+    border: 2px solid #d69a5b;
+    border-radius: 25px;
+    outline: none;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #0002;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3,
+.card p,
+.card h4 {
+    margin: 12px 18px;
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+.card h4 {
+    color: #b8753c;
+    font-size: 20px;
+}
+
+.card button {
+    margin-left: 18px;
+    padding: 10px 18px;
+    background: #5b3422;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #b8753c;
+}
+
+
+/* About */
+
+.about {
+    padding: 80px 8%;
+    background: #f3e2d0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #3b2418;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive */
+
+@media(max-width: 900px) {
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+
+@media(max-width: 600px) {
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 90%;
+    }
+}

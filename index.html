@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew Bliss Coffee</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2>☕ Brew Bliss</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button onclick="showCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <p class="small-title">WELCOME TO BREW BLISS</p>
+
+            <h1>Fresh Coffee.<br>
+                <span>Happy Moments.</span>
+            </h1>
+
+            <p>
+                Enjoy freshly brewed coffee, delicious desserts
+                and beautiful moments with us.
+            </p>
+
+            <a href="#menu" class="btn">Explore Menu ☕</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80">
+        </div>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section id="menu">
+
+        <h2 class="section-title">Our Popular Menu</h2>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search coffee..." onkeyup="searchMenu()">
+        </div>
+
+        <div class="menu-container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80">
+
+                <h3>Cappuccino</h3>
+
+                <p>Rich espresso with creamy milk foam.</p>
+
+                <h4>₹180</h4>
+
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80">
+
+                <h3>Latte</h3>
+
+                <p>Smooth coffee with steamed milk.</p>
+
+                <h4>₹160</h4>
+
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80">
+
+                <h3>Mocha</h3>
+
+                <p>Chocolate, espresso and creamy milk.</p>
+
+                <h4>₹200</h4>
+
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>Soft and delicious chocolate cake.</p>
+
+                <h4>₹220</h4>
+
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div>
+            <h2>About Brew Bliss</h2>
+
+            <p>
+                Brew Bliss is a cozy coffee shop where every cup
+                is prepared with love and fresh ingredients.
+            </p>
+
+            <p>
+                Come and enjoy your favorite coffee with friends
+                and family.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80">
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Visit Us ☕</h2>
+
+        <p>📍 Ahmedabad, Gujarat</p>
+        <p>📞 +91 98765 43210</p>
+        <p>📧 brewbliss@gmail.com</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Brew Bliss Coffee | Made with ☕ & ❤️</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
